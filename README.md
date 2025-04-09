@@ -1,29 +1,67 @@
-# Introduction to CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro to CSS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-## Objectives
-Link an external CSS file to an HTML document.
-Apply basic styling using selectors.
-Use colors, fonts, and spacing effectively.
+  <header id="main-header">
+    <h1>Welcome to My CSS Page</h1>
+    <p class="intro">Learning CSS is fun and creative!</p>
+  </header>
 
-## Instructions
+  <section>
+    <img src="https://via.placeholder.com/300" alt="Sample" class="styled-image" />
+    <p>This image is styled using CSS. Look at the border, spacing, and how it's centered!</p>
+  </section>
 
-Create a style.css file.
-Apply CSS to a HTML page.
-Style elements using:
-Classes and IDs.
-Color and typography.
-Margins, paddings, and borders.
+  <footer>
+    <p>&copy; 2025 My CSS Journey</p>
+  </footer>
 
->[!NOTE]
->  - Include at least:
->  - Use of 3 selectors
->  - Style an image
->  - Margin, Padding & Borders
->  - Different font
+</body>
+</html>
+/* Element selector */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 
-# Tasks
- - Link an external CSS file.
- - Apply at least 3 different selectors.
- - Improve readability and aesthetics.
+/* ID selector */
+#main-header {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid #357ABD;
+}
 
-Happy Coding! 💻✨
+/* Class selector */
+.intro {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Image styling */
+.styled-image {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e0e0e0;
+  margin-top: 40px;
+}
